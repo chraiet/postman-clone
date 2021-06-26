@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="p-4">
-        <form>
+        <form data-form>
             <div class="input-group mb-4">
-                <select class="form-select flex-grow-0 w-auto">
+                <select class="form-select flex-grow-0 w-auto" data-method>
                     <option value="GET" selected>GET</option>
                     <option value="POST">POST</option>
                     <option value="PUT">PUT</option>
                     <option value="PATCH">PATCH</option>
                     <option value="DELETE">DELETE</option>
                 </select>
-                <input class="form-control" type="url" placeholder="http://example.com" required />
+                <input class="form-control" type="url" placeholder="http://example.com" data-url required />
                 <button type="submit" class="btn btn-primary">Send</button>
             </div>
 
@@ -59,7 +59,7 @@
         </form>
     </div>
 
-    <template datab-key-value-template>
+    <template data-key-value-template>
         <div class="input-group mt-2" data-key-value-pair>
             <input type="text" class="form-control" data-key placeholder="Key" />
             <input type="text" class="form-control" data-key placeholder="Value" />
